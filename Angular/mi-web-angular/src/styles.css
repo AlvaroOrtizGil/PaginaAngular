@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f4;
+  color: #2c3e50;
+  line-height: 1.6;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #ec7063;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 25px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.btn:hover {
+  background-color: #e64636;
+}
+.btn:active {
+  transform: scale(0.98);
+}
+
+.home {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9f9f9;
+}
+.home .content {
+  text-align: center;
+  max-width: 600px;
+}
+.home .content h1 {
+  font-size: 3rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+.home .content p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+.home .content .btn {
+  margin-top: 20px;
+}
+
+.exhibitions {
+  padding: 50px 0;
+  background-color: #fff;
+}
+.exhibitions .content {
+  text-align: center;
+}
+.exhibitions .content h1 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 30px;
+}
+.exhibitions .content p {
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+}
+.exhibitions .exhibition-list {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.exhibitions .exhibition-list .exhibition-item {
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+.exhibitions .exhibition-list .exhibition-item:hover {
+  transform: translateY(-10px);
+}
+.exhibitions .exhibition-list .exhibition-item img {
+  width: 100%;
+  height: auto;
+  border-bottom: 2px solid #ddd;
+}
+.exhibitions .exhibition-list .exhibition-item h3 {
+  margin-top: 15px;
+  font-size: 1.5rem;
+  color: #2c3e50;
+}
+.exhibitions .exhibition-list .exhibition-item p {
+  font-size: 1rem;
+  color: #777;
+  margin-top: 10px;
+}
+
+.about {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+}
+.about .content {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.about .content h1 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+.about .content p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.contact {
+  background-color: #fff;
+  padding: 50px 0;
+}
+.contact .content {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+.contact .content h1 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 30px;
+}
+.contact .content p {
+  font-size: 1.2rem;
+  color: #777;
+  margin-bottom: 40px;
+}
+.contact .content form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.contact .content form label {
+  font-size: 1rem;
+  text-align: left;
+}
+.contact .content form input, .contact .content form textarea {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+.contact .content form button[type=submit] {
+  margin-top: 20px;
+  background-color: #ec7063;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+.contact .content form button[type=submit]:hover {
+  background-color: #e64636;
+}/*# sourceMappingURL=styles.css.map */

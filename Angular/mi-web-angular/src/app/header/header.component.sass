@@ -1,0 +1,223 @@
+// Variables de colores
+$background-color: #0D2B2B // Color de fondo principal (puedes mantenerlo para crear contraste con el fondo del cuadro)
+$accent-color: #FFD700  // Color dorado (similar a las estrellas en el cuadro)
+$text-color: #FFFFFF  // Blanco para el texto
+$font-size: 18px  // Tamaño de fuente para los textos
+$highlight-color: #F0E68C  // Un tono de amarillo pálido (para destacar elementos)
+$deep-accent-color: #1E3A5F  // Un azul profundo, similar al cielo nocturno en el cuadro
+$shadow-color: rgba(0, 0, 0, 0.5)  // Para los elementos con fondo oscuro
+$button-hover-color: #A22C29  // Rojo oscuro (para el hover en los botones, que complementa el cuadro)
+
+// Variables de colores
+$background-color: #0D2B2B  // Color de fondo principal (para contraste con el fondo del cuadro)
+$accent-color: #FFD700  // Color dorado (similar a las estrellas en el cuadro)
+$text-color: #FFFFFF  // Blanco para el texto
+$font-size: 18px  // Tamaño de fuente para los textos
+$highlight-color: #F0E68C  // Un tono de amarillo pálido (para destacar elementos)
+$deep-accent-color: #1E3A5F  // Un azul profundo, similar al cielo nocturno en el cuadro
+$shadow-color: rgba(0, 0, 0, 0.5)  // Para los elementos con fondo oscuro
+$button-hover-color: #A22C29  // Rojo oscuro (para el hover en los botones, que complementa el cuadro)
+
+// Estilos generales para el body
+body
+  font-family: Arial, sans-serif
+  font-size: $font-size
+  color: $text-color
+  background-color: $background-color
+  margin: 0
+  padding: 0
+
+// Header
+header
+  background-color: $background-color  // Fondo del header
+  color: $text-color  // Texto en blanco
+  padding: 15px 0
+  box-shadow: 0 4px 6px $shadow-color  // Sombra sutil para el header
+
+  nav
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 0 20px
+
+    .logo
+      h1
+        font-size: 30px  // Ajuste de tamaño de fuente
+        font-weight: bold
+        color: $highlight-color  // Resalta el logo en un amarillo suave (para destacar)
+
+    .nav-links
+      list-style-type: none
+      margin: 0
+      padding: 0
+      display: flex
+
+      li
+        margin-left: 25px
+
+        a
+          text-decoration: none
+          color: $text-color  // Color blanco para los enlaces
+          font-size: 1.1rem
+          font-weight: 600
+          transition: color 0.3s ease, text-decoration 0.3s ease
+
+          &:hover
+            color: $accent-color  // Color dorado en hover
+            text-decoration: underline  // Subrayado en hover
+
+// Home Section
+.home
+  height: 100vh
+  display: flex
+  justify-content: center
+  align-items: center
+  background: url('/assets/background.jpg') no-repeat center center/cover  // Fondo con la imagen
+  color: $text-color
+  position: relative
+
+  .content
+    background-color: rgba(0, 0, 0, 0.5)  // Fondo oscuro semi-transparente
+    padding: 20px
+    border-radius: 10px
+    max-width: 80%
+    text-align: center
+
+    h1
+      font-size: 3rem
+      margin-bottom: 20px
+      color: $highlight-color  // Resalta el título en amarillo pálido
+
+    p
+      font-size: 1.2rem
+      margin-bottom: 20px
+
+    .btn
+      background-color: $accent-color  // Botón con color dorado
+      color: $background-color
+      padding: 12px 24px
+      border: none
+      border-radius: 25px
+      text-decoration: none
+      text-align: center
+      font-weight: bold
+      cursor: pointer
+      transition: background-color 0.3s
+
+      &:hover
+        background-color: $button-hover-color  // Rojo oscuro en hover
+
+// Exhibitions Section
+.exhibitions
+  padding: 50px 0
+  background-color: $highlight-color  // Fondo amarillo suave para destacar la sección
+
+  .content
+    text-align: center
+
+    h1
+      font-size: 2.5rem
+      margin-bottom: 30px
+
+    p
+      font-size: 1.1rem
+      margin-bottom: 40px
+
+  .exhibition-list
+    display: flex
+    justify-content: center
+    gap: 40px
+    flex-wrap: wrap
+
+    .exhibition-item
+      width: 300px
+      text-align: center
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1)
+      border-radius: 8px
+      overflow: hidden
+      transition: transform 0.3s ease
+
+      &:hover
+        transform: translateY(-10px)
+
+      img
+        width: 100%
+        height: auto
+        border-bottom: 2px solid #ddd
+
+      h3
+        margin-top: 15px
+        font-size: 1.5rem
+        color: $text-color
+
+      p
+        font-size: 1rem
+        color: $background-color
+        margin-top: 10px
+
+// About Section
+.about
+  background-color: $background-color
+  color: $text-color
+  padding: 50px 0
+
+  .content
+    text-align: center
+    max-width: 800px
+    margin: 0 auto
+
+    h1
+      font-size: 2.5rem
+      color: $accent-color  // Color dorado para resaltar
+      margin-bottom: 20px
+
+ 
+
+// Contact Section
+.contact
+  background-color: $deep-accent-color  // Fondo azul oscuro, similar al cielo nocturno
+  padding: 50px 0
+  color: $text-color
+
+  .content
+    max-width: 600px
+    margin: 0 auto
+    text-align: center
+
+    h1
+      font-size: 2.5rem
+      color: $accent-color  // Dorado para el encabezado
+      margin-bottom: 30px
+
+    p
+      font-size: 1.2rem
+      color: $highlight-color
+      margin-bottom: 40px
+
+    form
+      display: flex
+      flex-direction: column
+      gap: 20px
+
+      label
+        font-size: 1rem
+        text-align: left
+
+      input, textarea
+        padding: 12px
+        border: 1px solid #ddd
+        border-radius: 5px
+        font-size: 1rem
+
+      button[type="submit"]
+        margin-top: 20px
+        background-color: $accent-color
+        color: $background-color
+        padding: 12px 24px
+        border: none
+        border-radius: 25px
+        cursor: pointer
+        font-size: 1.1rem
+
+        &:hover
+          background-color: $button-hover-color  // Rojo oscuro en el hover del botón

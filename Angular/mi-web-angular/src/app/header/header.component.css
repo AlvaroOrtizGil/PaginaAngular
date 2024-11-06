@@ -1,0 +1,202 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  color: #FFFFFF;
+  background-color: #0D2B2B;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #0D2B2B;
+  color: #FFFFFF;
+  padding: 15px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+header nav .logo h1 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #F0E68C;
+}
+header nav .nav-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+header nav .nav-links li {
+  margin-left: 25px;
+}
+header nav .nav-links li a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: color 0.3s ease, -webkit-text-decoration 0.3s ease;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+  transition: color 0.3s ease, text-decoration 0.3s ease, -webkit-text-decoration 0.3s ease;
+}
+header nav .nav-links li a:hover {
+  color: #FFD700;
+  text-decoration: underline;
+}
+
+.home {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("/assets/background.jpg") no-repeat center center/cover;
+  color: #FFFFFF;
+  position: relative;
+}
+.home .content {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 80%;
+  text-align: center;
+}
+.home .content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #F0E68C;
+}
+.home .content p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+.home .content .btn {
+  background-color: #FFD700;
+  color: #0D2B2B;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 25px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.home .content .btn:hover {
+  background-color: #A22C29;
+}
+
+.exhibitions {
+  padding: 50px 0;
+  background-color: #F0E68C;
+}
+.exhibitions .content {
+  text-align: center;
+}
+.exhibitions .content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+.exhibitions .content p {
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+}
+.exhibitions .exhibition-list {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.exhibitions .exhibition-list .exhibition-item {
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+.exhibitions .exhibition-list .exhibition-item:hover {
+  transform: translateY(-10px);
+}
+.exhibitions .exhibition-list .exhibition-item img {
+  width: 100%;
+  height: auto;
+  border-bottom: 2px solid #ddd;
+}
+.exhibitions .exhibition-list .exhibition-item h3 {
+  margin-top: 15px;
+  font-size: 1.5rem;
+  color: #FFFFFF;
+}
+.exhibitions .exhibition-list .exhibition-item p {
+  font-size: 1rem;
+  color: #0D2B2B;
+  margin-top: 10px;
+}
+
+.about {
+  background-color: #0D2B2B;
+  color: #FFFFFF;
+  padding: 50px 0;
+}
+.about .content {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.about .content h1 {
+  font-size: 2.5rem;
+  color: #FFD700;
+  margin-bottom: 20px;
+}
+
+.contact {
+  background-color: #1E3A5F;
+  padding: 50px 0;
+  color: #FFFFFF;
+}
+.contact .content {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+.contact .content h1 {
+  font-size: 2.5rem;
+  color: #FFD700;
+  margin-bottom: 30px;
+}
+.contact .content p {
+  font-size: 1.2rem;
+  color: #F0E68C;
+  margin-bottom: 40px;
+}
+.contact .content form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.contact .content form label {
+  font-size: 1rem;
+  text-align: left;
+}
+.contact .content form input, .contact .content form textarea {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+.contact .content form button[type=submit] {
+  margin-top: 20px;
+  background-color: #FFD700;
+  color: #0D2B2B;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+.contact .content form button[type=submit]:hover {
+  background-color: #A22C29;
+}/*# sourceMappingURL=header.component.css.map */

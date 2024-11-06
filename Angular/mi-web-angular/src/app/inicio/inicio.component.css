@@ -1,0 +1,51 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  color: #FFFFFF;
+  background-color: #216869;
+  margin: 0;
+  padding: 0;
+}
+
+.home {
+  height: 100vh;
+  background: url("/assets/background.jpg") no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+  text-align: center;
+  position: relative;
+}
+.home .content {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 80%;
+  text-align: center;
+}
+.home .content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #F0E68C;
+}
+.home .content p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #FFFFFF;
+}
+.home .content .btn {
+  background-color: #FFD700;
+  color: #216869;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 25px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.home .content .btn:hover {
+  background-color: #A22C29;
+}/*# sourceMappingURL=inicio.component.css.map */

@@ -1,0 +1,62 @@
+// Variables de colores
+$background-color: #216869  // Color de fondo principal (puedes mantenerlo para crear contraste con el fondo del cuadro)
+$accent-color: #FFD700  // Color dorado (similar a las estrellas en el cuadro)
+$text-color: #FFFFFF  // Blanco para el texto
+$font-size: 18px  // Tamaño de fuente para los textos
+$highlight-color: #F0E68C  // Un tono de amarillo pálido (para destacar elementos)
+$deep-accent-color: #1E3A5F  // Un azul profundo, similar al cielo nocturno en el cuadro
+$shadow-color: rgba(0, 0, 0, 0.5)  // Para los elementos con fondo oscuro
+$button-hover-color: #A22C29  // Rojo oscuro (para el hover en los botones, que complementa el cuadro)
+
+
+// Estilos generales para el body
+body
+  font-family: Arial, sans-serif
+  font-size: $font-size
+  color: $text-color
+  background-color: $background-color
+  margin: 0
+  padding: 0
+
+// Home Section
+.home
+  height: 100vh
+  background: url('/assets/background.jpg') no-repeat center center/cover
+  display: flex
+  justify-content: center
+  align-items: center
+  color: $text-color
+  text-align: center
+  position: relative
+
+  .content
+    background-color: $shadow-color  // Fondo oscuro semi-transparente para el texto
+    padding: 20px
+    border-radius: 10px
+    max-width: 80%
+    text-align: center
+
+    h1
+      font-size: 3rem
+      margin-bottom: 20px
+      color: $highlight-color  // Amarillo claro para los títulos, inspirado en las estrellas
+
+    p
+      font-size: 1.2rem
+      margin-bottom: 20px
+      color: $text-color
+
+    .btn
+      background-color: $accent-color  // Dorado para los botones
+      color: $background-color
+      padding: 12px 24px
+      border: none
+      border-radius: 25px
+      text-decoration: none
+      text-align: center
+      font-weight: bold
+      cursor: pointer
+      transition: background-color 0.3s
+
+      &:hover
+        background-color: $button-hover-color  // Rojo oscuro para el hover, para hacer contraste con el fondo

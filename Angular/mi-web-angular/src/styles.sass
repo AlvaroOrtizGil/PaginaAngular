@@ -1,0 +1,177 @@
+// Variables
+$primary-color: #2c3e50
+$secondary-color: #ec7063
+$background-color: #f4f4f4
+$button-color: $secondary-color
+$font-family: 'Arial', sans-serif
+
+// Reset básico para quitar márgenes y paddings por defecto
+* 
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+// Estilo global del body
+body
+  font-family: $font-family
+  background-color: $background-color
+  color: $primary-color
+  line-height: 1.6
+
+// Botones
+.btn
+  display: inline-block
+  background-color: $button-color
+  color: white
+  padding: 12px 24px
+  border: none
+  border-radius: 25px
+  text-decoration: none
+  text-align: center
+  font-weight: bold
+  cursor: pointer
+  transition: background-color 0.3s
+
+  &:hover
+    background-color: darken($button-color, 10%)
+
+  &:active
+    transform: scale(0.98)
+
+// Home Section
+.home
+  height: 100vh
+  display: flex
+  justify-content: center
+  align-items: center
+  background-color: #f9f9f9
+
+  .content
+    text-align: center
+    max-width: 600px
+
+    h1
+      font-size: 3rem
+      color: $primary-color
+      margin-bottom: 20px
+
+    p
+      font-size: 1.2rem
+      margin-bottom: 20px
+
+    .btn
+      margin-top: 20px
+
+// Exhibitions Section
+.exhibitions
+  padding: 50px 0
+  background-color: #fff
+  .content
+    text-align: center
+
+    h1
+      font-size: 2.5rem
+      color: $primary-color
+      margin-bottom: 30px
+
+    p
+      font-size: 1.1rem
+      margin-bottom: 40px
+
+  .exhibition-list
+    display: flex
+    justify-content: center
+    gap: 40px
+    flex-wrap: wrap
+
+    .exhibition-item
+      width: 300px
+      text-align: center
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1)
+      border-radius: 8px
+      overflow: hidden
+      transition: transform 0.3s ease
+
+      &:hover
+        transform: translateY(-10px)
+
+      img
+        width: 100%
+        height: auto
+        border-bottom: 2px solid #ddd
+
+      h3
+        margin-top: 15px
+        font-size: 1.5rem
+        color: $primary-color
+
+      p
+        font-size: 1rem
+        color: #777
+        margin-top: 10px
+
+// About Section
+.about
+  background-color: #f9f9f9
+  padding: 50px 0
+  .content
+    text-align: center
+    max-width: 800px
+    margin: 0 auto
+
+    h1
+      font-size: 2.5rem
+      color: $primary-color
+      margin-bottom: 20px
+
+    p
+      font-size: 1.2rem
+      color: #555
+      margin-bottom: 20px
+
+// Contact Section
+.contact
+  background-color: #fff
+  padding: 50px 0
+  .content
+    max-width: 600px
+    margin: 0 auto
+    text-align: center
+
+    h1
+      font-size: 2.5rem
+      color: $primary-color
+      margin-bottom: 30px
+
+    p
+      font-size: 1.2rem
+      color: #777
+      margin-bottom: 40px
+
+    form
+      display: flex
+      flex-direction: column
+      gap: 20px
+
+      label
+        font-size: 1rem
+        text-align: left
+
+      input, textarea
+        padding: 12px
+        border: 1px solid #ddd
+        border-radius: 5px
+        font-size: 1rem
+
+      button[type="submit"]
+        margin-top: 20px
+        background-color: $button-color
+        color: white
+        padding: 12px 24px
+        border: none
+        border-radius: 25px
+        cursor: pointer
+        font-size: 1.1rem
+
+        &:hover
+          background-color: darken($button-color, 10%)
