@@ -1,16 +1,7 @@
-Pepe's Gallery - Proyecto Web en Angular
-Descripción
-Pepe's Gallery es una galería de arte contemporáneo en línea desarrollada con Angular. Este proyecto tiene como objetivo ofrecer una plataforma interactiva donde los usuarios puedan explorar exposiciones de arte, conocer más sobre los artistas, y ponerse en contacto con la galería. Además, los usuarios pueden acceder a información sobre las políticas de privacidad y más.
+El proyecto de Pepe's Gallery utiliza Angular para crear una aplicación web modular y dinámica. Cada sección de la aplicación, como el encabezado, el pie de página y las exhibiciones de arte, está contenida en componentes separados, lo que permite una estructura organizada y escalable.
 
-Funcionalidades
-Exhibiciones: Visualiza las exposiciones de arte actuales con descripciones e imágenes interactivas.
-Sobre Nosotros: Conoce más acerca de la misión y visión de la galería.
-Contacto: Envíanos tus preguntas o comentarios mediante un formulario de contacto.
-Política de Privacidad: Información sobre cómo gestionamos tus datos personales.
-Tecnologías Utilizadas
-Angular: Framework principal para el desarrollo de la aplicación.
-HTML5: Para la estructura de las páginas.
-CSS/SASS: Estilos visuales de la página, utilizando Sass para una mejor gestión y organización del código.
-Router Angular: Para la navegación de páginas sin recargar el navegador.
-Requisitos
-Node.js y npm (gestor de paquetes de Node.js) instalados en tu máquina.
+Para la navegación, se ha utilizado Angular Router para conectar las diferentes secciones sin recargar la página. Esto mejora la experiencia de usuario y hace que la web sea más fluida. Además, se implementaron directivas de Angular, como *ngFor para iterar sobre las exposiciones y routerLink para manejar los enlaces de navegación.
+
+El estilo de la aplicación se gestionó con SASS, utilizando características avanzadas como variables y mixins para una mayor eficiencia y organización de los estilos. La aplicación también está preparada para usar servicios que pueden manejar futuras integraciones con APIs externas.
+
+En resumen, Angular ha permitido una construcción modular y flexible de la aplicación, mejorando tanto el rendimiento como la experiencia del usuario. SASS facilita la personalización visual de la interfaz, manteniendo un código limpio y organizado.
