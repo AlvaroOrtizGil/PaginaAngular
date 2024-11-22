@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { InicioComponent } from './inicio/inicio.component';
@@ -10,7 +9,8 @@ import { FooterComponent } from './footer/footer.component';
 import { ExhibitionsComponent } from './exhibitions/exhibitions.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
-import { HomeComponent } from './home/home.component';
+import { PoliticaPrivacidadComponent } from './politica-privacidad/politica-privacidad.component';
+
 
 
 
@@ -24,7 +24,7 @@ import { HomeComponent } from './home/home.component';
     ExhibitionsComponent,
     AboutComponent,
     ContactComponent,
-    HomeComponent
+    PoliticaPrivacidadComponent
   
   ],
   imports: [

@@ -1,0 +1,51 @@
+.exhibitions
+  padding: 2rem
+  background-color: #f9f9f9
+  color: #333
+
+  .content
+    text-align: center
+    max-width: 1200px
+    margin: 0 auto
+
+    h1
+      font-size: 2.5rem
+      margin-bottom: 1rem
+      color: #2c3e50
+
+    p
+      margin-bottom: 2rem
+      font-size: 1.2rem
+      color: #7f8c8d
+
+  .exhibition-list
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
+    gap: 1.5rem
+
+    .exhibition-item
+      background-color: #fff
+      border: 1px solid #ddd
+      border-radius: 8px
+      overflow: hidden
+      text-align: center
+      transition: transform 0.3s ease
+
+      &:hover
+        transform: translateY(-5px)
+
+      img
+        width: 100%
+        height: 200px   // Altura fija para todas las imágenes
+        object-fit: cover  // Recorta y centra la imagen sin deformarla
+        border-bottom: 1px solid #ddd
+
+      h3
+        font-size: 1.5rem
+        color: #2c3e50
+        margin: 0.5rem 0
+
+      p
+        font-size: 1rem
+        color: #7f8c8d
+        margin: 0.5rem
